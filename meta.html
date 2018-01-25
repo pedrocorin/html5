@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <title>Unidade 04 - Metatag</title>
+        <meta charset="utf-8">
+        <!--- Criando Meta tag para informar o autor da página --> 
+        <meta name="author" content="Pedro Corin">
+        <!-- Meta Tag para informar em qual software foi criado -->
+        <meta name="generator" content="VS Code">
+        <!-- Meta Tag para palavras chaves -->
+        <meta name="keywords" content="HTML5, Programador, CSS3, Javascript">
+        <!-- Meta Tag para descrever a página -->
+        <meta name="description" content="Página de exemplo em HTML5">
+        <!-- Meta Tag para dar um nome a página -->
+        <meta name="application-name" content="Corin Art">
+        <!-- Meta Tag para recarregar a página de tempos em tempos -->
+        <meta http-equiv="refresh" content="8">
+
+        <!-- Criada a função em Javascript para sortear um número e mostrar a cada 8 segundos -->
+
+        <script>
+        
+            function sorteioNumero(){
+                sorteio.innerHTML = Math.round(Math.random() * 50);
+            }
+            window.onload = sorteioNumero;
+        
+        </script>
+
+    </head>
+    <body>
+        <p id="sorteio"></p>
+    </body>
+</html>
